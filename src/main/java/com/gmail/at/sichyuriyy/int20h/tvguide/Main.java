@@ -16,7 +16,7 @@ public class Main {
 
     public static void main(String[] args) {
         RestTemplate restTemplate = new RestTemplate();
-        Guide guide = restTemplate.getForObject("https://api.ovva.tv/v2/ua/tvguide/1plus1/2017-02-18", Guide.class);
+        Guide guide = restTemplate.getForObject("https://api.ovva.tv/v2/ua/tvguide/1plus1", Guide.class);
 
         Program program = guide.getData().getPrograms().get(0);
 
