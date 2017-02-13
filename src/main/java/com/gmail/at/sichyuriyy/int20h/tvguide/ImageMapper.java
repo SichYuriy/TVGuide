@@ -88,7 +88,7 @@ public class ImageMapper {
 
         g.setFont(timeFont);
 
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:MM");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm");
         g.drawString(timeBegin.format(formatter) + " - " + timeEnd.format(formatter),
                 20, 70);
         if (previewImage != null) {
